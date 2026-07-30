@@ -1,11 +1,17 @@
+import SEO from "./components/SEO";
 import hero from "./assets/hero.png";
 import { motion } from "framer-motion";
 import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0f172a] text-white">
+   <>
+      <SEO
+        title="AIVA OS | AI Automation & Web Development"
+        description="AIVA OS provides AI Automation, Web Development, Chatbots, SEO, Business Solutions and Modern AI Tools."
+      />
 
+      <div className="min-h-screen bg-[#0f172a] text-white">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md flex items-center justify-between px-8 py-6">
         <h1 className="text-2xl font-bold">AIVA-OS 🚀</h1>
@@ -295,6 +301,7 @@ function App() {
 
   </div>
 </section>
+
 {/* ===================== CTA ===================== */}
 <section className="py-24 bg-gradient-to-r from-violet-700 via-fuchsia-600 to-purple-700 text-center">
 
@@ -359,8 +366,8 @@ function App() {
   </div>
 
 </footer>
-
-    </div>
+      </div>
+    </>
   );
 }
 
